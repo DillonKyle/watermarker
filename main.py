@@ -8,7 +8,7 @@ def generate_watermark_images(photo_dir):
     if os.path.exists(export_dir) == False:
         os.mkdir(export_dir)
     for filename in os.listdir(photo_dir):
-        if filename.endswith('.JPG'):
+        if filename.endswith('.JPG') or filename.endswith('.jpg'):
             file_path = f'{photo_dir}/{filename}'
             export_path = f'{export_dir}{filename}'
 
